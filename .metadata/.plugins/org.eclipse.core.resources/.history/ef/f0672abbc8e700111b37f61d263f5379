@@ -1,0 +1,14 @@
+package com.wipro.rest.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+
+@RestController
+public class WelcomeController {
+
+	@GetMapping("api/v1/restdemo")
+	public String sayHello() {
+	return "Welcome to controler of the project");
+	}
+}
